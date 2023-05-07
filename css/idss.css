@@ -1,0 +1,195 @@
+/* Start Variables */
+:root {
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+}
+
+/* End Variables */
+/* Start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End global rules */
+/* Start Questions */
+.first-question {
+  /* padding-top: var(--section-padding); */
+  padding-bottom: var(--section-padding);
+}
+
+.first-question .header {
+  padding: 40px 50px 20px;
+  font-size: 25px;
+  width: fit-content;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.first-question .header i {
+  margin-right: 5px;
+  color: #1e3050;
+}
+
+.first-question .title h1 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: math;
+}
+
+.first-question .title p {
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #555556;
+}
+
+.first-question .card {
+  height: 641px;
+  width: 100%;
+  background-color: black;
+  background-image: url(../images/covid-19.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 15px;
+}
+
+.first-question .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 20%);
+  border-radius: 15px;
+}
+
+.first-question .card .text {
+  position: relative;
+  padding: 130px;
+}
+
+.first-question .card h3 {
+  color: white;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.first-question .card .yes-no {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 115px;
+}
+
+.first-question .card button {
+  padding: 10px 50px;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: lightblue;
+  color: brown;
+  transition: 0.3s;
+}
+
+.first-question .card button:hover {
+  background-color: rgb(173 216 230 / 75%);
+}
+
+.first-question .container i {
+  margin: 10px;
+  margin-top: 20px;
+  position: relative;
+  background-color: #005a76;
+  cursor: pointer;
+  color: black;
+}
+
+.first-question .fa-angle-left {
+  left: 90%;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.first-question .fa-angle-right {
+  left: 90%;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+/* End Questions */
+
+/* Start Result  */
+.first-question .text h4 {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.first-question .text h4 span {
+  margin-top: 100px;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+/* End Result  */
